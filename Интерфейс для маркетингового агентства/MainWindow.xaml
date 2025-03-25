@@ -24,12 +24,13 @@
         <DataGrid x:Name="CampaignsDataGrid" Grid.Row="0" AutoGenerateColumns="False" SelectionMode="Single" IsReadOnly="True"
                   Margin="0 0 0 10">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding CampaignId}" Width="50"/>
-                <DataGridTextColumn Header="Название" Binding="{Binding Name}" Width="*"/>
-                <DataGridTextColumn Header="Дата начала" Binding="{Binding StartDate}" Width="100"/>
-                <DataGridTextColumn Header="Дата завершения" Binding="{Binding EndDate}" Width="100"/>
-                <DataGridTextColumn Header="Бюджет" Binding="{Binding Budget}" Width="100"/>
-                <DataGridTextColumn Header="Статус" Binding="{Binding Status}" Width="100"/>
+                <DataGridTextColumn Header="id" Binding="{Binding campaign_id}" Width="*"/>
+                <DataGridTextColumn Header="name" Binding="{Binding name}" Width="*"/>
+                <DataGridTextColumn Header="start_date" Binding="{Binding start_date}" Width="*"/>
+                <DataGridTextColumn Header="end_date" Binding="{Binding end_date}" Width="*"/>
+                <DataGridTextColumn Header="budget" Binding="{Binding budget}" Width="*"/>
+                <DataGridTextColumn Header="status" Binding="{Binding status}" Width="*"/>
+                <DataGridTextColumn Header="client_id" Binding="{Binding client_id}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
