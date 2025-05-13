@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Интерфейс_для_маркетингового_агентства"
         mc:Ignorable="d"
-        Title="EditCampaignWindow" Height="450" Width="800">
+        Title="EditCampaignWindow" Height="350" Width="600">
     <Grid Margin="10">
 
         <Grid.RowDefinitions>
@@ -53,6 +53,9 @@
         <TextBox x:Name="ClientIdTextBox" Grid.Row="5" Grid.Column="1" Margin="0 0 0 10"/>
 
         <!-- Кнопка для добавления -->
-        <Button x:Name="EditButton" Grid.Row="7" Grid.Column="1" Content="Редактировать" Width="100" HorizontalAlignment="Right" Click="EditButton_Click"/>
+        <StackPanel Grid.Row="7" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="CancelButton" Content="Отмена" Width="80" Margin="0 10 10 0" Click="CancelButton_Click"/>
+            <Button x:Name="SaveButton" Content="Сохранить" Width="100" Margin="0 10 10 0" Click="SaveButton_Click"/>
+        </StackPanel>
     </Grid>
 </Window>

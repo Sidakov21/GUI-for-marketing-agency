@@ -65,7 +65,7 @@ namespace Интерфейс_для_маркетингового_агентст�
                    out _);
         }
 
-        private void EditButton_Click(object sender, RoutedEventArgs e)
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             // Проверка введенных данных
             if (string.IsNullOrWhiteSpace(NameTextBox.Text) ||
@@ -142,6 +142,12 @@ namespace Интерфейс_для_маркетингового_агентст�
                 MessageBox.Show($"Ошибка при обновлении кампании: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         
+        }
+
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = false;
+            this.Close();
         }
     }
 }

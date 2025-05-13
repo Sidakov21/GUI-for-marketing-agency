@@ -1,0 +1,65 @@
+﻿<Window x:Class="Интерфейс_для_маркетингового_агентства.AddResultWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Интерфейс_для_маркетингового_агентства"
+        mc:Ignorable="d"
+        Title="AddResultWindow" Height="400" Width="500">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Добавить результат кампании" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0 0 0 20"/>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="Impressions:" VerticalAlignment="Center"/>
+            <TextBox x:Name="ImpressionsTextBox" Grid.Row="0" Grid.Column="1" Margin="0 5"/>
+
+            <Label Grid.Row="1" Grid.Column="0" Content="Clicks:" VerticalAlignment="Center"/>
+            <TextBox x:Name="ClicksTextBox" Grid.Row="1" Grid.Column="1" Margin="0 5"/>
+
+            <Label Grid.Row="2" Grid.Column="0" Content="Conversions:" VerticalAlignment="Center"/>
+            <TextBox x:Name="ConversionsTextBox" Grid.Row="2" Grid.Column="1" Margin="0 5"/>
+
+            <Label Grid.Row="3" Grid.Column="0" Content="Leads:" VerticalAlignment="Center"/>
+            <TextBox x:Name="LeadCountTextBox" Grid.Row="3" Grid.Column="1" Margin="0 5"/>
+
+            <Label Grid.Row="4" Grid.Column="0" Content="ROI (%):" VerticalAlignment="Center"/>
+            <TextBox x:Name="RoiTextBox" Grid.Row="4" Grid.Column="1" Margin="0 5"/>
+
+            <Label Grid.Row="5" Grid.Column="0" Content="Cost:" VerticalAlignment="Center"/>
+            <TextBox x:Name="CostTextBox" Grid.Row="5" Grid.Column="1" Margin="0 5"/>
+
+            <Label Grid.Row="6" Grid.Column="0" Content="Месяц завершения:" VerticalAlignment="Center"/>
+            <DatePicker x:Name="EndMonthPicker" Grid.Row="6" Grid.Column="1" Margin="0 5"/>
+
+            <Label Grid.Row="7" Grid.Column="0" Content="Campaign ID:" VerticalAlignment="Center"/>
+            <TextBox x:Name="CampaignIdTextBox" Grid.Row="7" Grid.Column="1" Margin="0 5"/>
+        </Grid>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 15 0 0">
+            <Button Content="Отмена" Width="100" Margin="0 0 10 0" Click="CancelButton_Click"/>
+            <Button Content="Добавить" Width="120" Click="AddButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

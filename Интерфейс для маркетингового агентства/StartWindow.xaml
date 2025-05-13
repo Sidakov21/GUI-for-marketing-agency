@@ -1,0 +1,32 @@
+﻿<Window x:Class="Интерфейс_для_маркетингового_агентства.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Интерфейс_для_маркетингового_агентства"
+        mc:Ignorable="d"
+        Title="Главное меню" Height="400" Width="550">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Главное меню" Grid.Row="0" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,20"/>
+
+        <!-- Кнопки меню -->
+        <UniformGrid Grid.Row="1" Columns="3" Rows="3" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,40,0,0" Width="480">
+            <Button Content="Кампании" Margin="5" Padding="15,10" FontSize="16" Click="CampaignsButton_Click"/>
+            <Button Content="Клиенты" Margin="5" Padding="15,10" FontSize="16" Click="ClientsButton_Click"/>
+            <Button Content="Контрагенты" Margin="5" Padding="15,10" FontSize="16" Click="CounterpartiesButton_Click"/>
+            <Button Content="Сотрудники" Margin="5" Padding="15,10" FontSize="16" Click="EmployeesButton_Click"/>
+            <Button Content="Платежи" Margin="5" Padding="15,10" FontSize="16" Click="PaymentsButton_Click"/>
+            <Button Content="Каналы" Margin="5" Padding="15,10" FontSize="16" Click="ChannelsButton_Click"/>
+            <Button Margin="5" Padding="15,10" FontSize="16" Visibility="Hidden"/>
+            <Button Content="Отчёты" Margin="5" Padding="15,10" FontSize="16" Click="ReportsButton_Click"/>
+        </UniformGrid>
+
+        <!-- Кнопка завершения работы -->
+        <Button Grid.Row="1" Content="Завершить работу" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Padding="10,5" FontSize="14" Click="ExitButton_Click"/>
+    </Grid>
+</Window>

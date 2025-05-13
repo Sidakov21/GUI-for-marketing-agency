@@ -5,23 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Интерфейс_для_маркетингового_агентства"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    
+        Title="Campaigns" Height="500" Width="800">
+
     <Grid Margin="10">
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        
-                 <!--Панель управления--> 
-        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 10 0 0">
-            <Button x:Name="AddCampaignButton" Content="Добавить" Width="100" Margin="0 0 10 0" Click="AddCampaignButton_Click"/>
-            <Button x:Name="EditCampaignButton" Content="Редактировать" Width="100" Margin="0 0 10 0" Click="EditCampaignButton_Click"/>
-            <Button x:Name="DeleteCampaignButton" Content="Удалить" Width="100" Click="DeleteCampaignButton_Click"/>
-        </StackPanel>
+
+        <!-- Заголовок таблицы -->
+        <TextBlock Grid.Row="0" Text="Таблица кампаний (Campaigns)" FontSize="20" FontWeight="Bold" Margin="0,0,0,15" HorizontalAlignment="Center"/>
 
         <!-- DataGrid для отображения списка кампаний -->
-        <DataGrid x:Name="CampaignsDataGrid" Grid.Row="0" AutoGenerateColumns="False" SelectionMode="Single" IsReadOnly="True"
+        <DataGrid x:Name="CampaignsDataGrid" Grid.Row="1" AutoGenerateColumns="False" SelectionMode="Single" IsReadOnly="True"
                   Margin="0 0 0 10">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="id" Binding="{Binding campaign_id}" Width="*"/>
@@ -33,5 +30,13 @@
                 <DataGridTextColumn Header="client_id" Binding="{Binding client_id}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
+
+        <!--Панель управления-->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 10 0 0">
+            <Button x:Name="AddCampaignButton" Content="Добавить" Width="100" Margin="0 0 10 0" Click="AddCampaignButton_Click" FontSize="15"/>
+            <Button x:Name="EditCampaignButton" Content="Редактировать" Width="120" Margin="0 0 10 0" Click="EditCampaignButton_Click" FontSize="15"/>
+            <Button x:Name="DeleteCampaignButton" Content="Удалить" Width="100" Click="DeleteCampaignButton_Click" FontSize="15"/>
+            <Button x:Name="BackButton" Content="Назад" Width="80" Margin="10 0 10 0" Click="BackButton_Click" FontSize="15"/>
+        </StackPanel>
     </Grid>
 </Window>

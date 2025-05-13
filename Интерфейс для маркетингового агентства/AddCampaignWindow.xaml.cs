@@ -124,5 +124,11 @@ namespace Интерфейс_для_маркетингового_агентст�
                 }
             }
         }
+
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = false;
+            this.Close();
+        }
     }
 }

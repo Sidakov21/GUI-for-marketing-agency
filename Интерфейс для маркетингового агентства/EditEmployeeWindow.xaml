@@ -1,0 +1,47 @@
+﻿<Window x:Class="Интерфейс_для_маркетингового_агентства.EditEmployeeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Интерфейс_для_маркетингового_агентства"
+        mc:Ignorable="d"
+        Title="EditEmployeeWindow" Height="350" Width="500">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- ФИО сотрудника -->
+        <Label Grid.Row="0" Grid.Column="0" Content="Full Name:" VerticalAlignment="Center" Margin="0 0 10 0"/>
+        <TextBox x:Name="FullNameTextBox" Grid.Row="0" Grid.Column="1" Margin="0 0 0 10" Height="25"/>
+
+        <!-- Должность -->
+        <Label Grid.Row="1" Grid.Column="0" Content="Position:" VerticalAlignment="Center" Margin="0 0 10 0"/>
+        <TextBox x:Name="PositionTextBox" Grid.Row="1" Grid.Column="1" Margin="0 0 0 10" Height="25"/>
+
+        <!-- Контактная информация -->
+        <Label Grid.Row="2" Grid.Column="0" Content="Contact info:" VerticalAlignment="Center" Margin="0 0 10 0"/>
+        <TextBox x:Name="ContactInfoTextBox" Grid.Row="2" Grid.Column="1" Margin="0 0 0 10" Height="25"/>
+
+        <!-- Зарплата -->
+        <Label Grid.Row="3" Grid.Column="0" Content="Salary:" VerticalAlignment="Center" Margin="0 0 10 0"/>
+        <TextBox x:Name="SalaryTextBox" Grid.Row="3" Grid.Column="1" Margin="0 0 0 10" Height="25"/>
+
+        <!-- Кнопки -->
+        <StackPanel Grid.Row="6" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="CancelButton" Content="Отмена" Width="80" Margin="0 10 10 0" Click="CancelButton_Click"/>
+            <Button x:Name="SaveButton" Content="Сохранить" Width="100" Margin="0 10 0 0" Click="SaveButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
