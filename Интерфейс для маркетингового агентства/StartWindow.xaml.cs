@@ -67,25 +67,25 @@ namespace Интерфейс_для_маркетингового_агентст�
             switch (windowName)
             {
                 case "Кампании":
-                    window = new MainWindow();
+                    window = new Campaigns.MainWindow();
                     break;
                 case "Клиенты":
-                    window = new ClientsWindow();
+                    window = new Clients.ClientsWindow();
                     break;
                 case "Сотрудники":
-                    window = new EmployeesWindow();
+                    window = new Employees.EmployeesWindow();
                     break;
                 case "Платежи":
-                    window = new PaymentsWindow();
+                    window = new Payments.PaymentsWindow();
                     break;
                 case "Каналы":
-                    window = new ChannelsWindow();
+                    window = new Channels.ChannelsWindow();
                     break;
                 case "Отчёты":
-                    window = new CampaignResultsWindow();
+                    window = new CampaignResults.CampaignResultsWindow();
                     break;
                 case "Контрагенты":
-                    window = new VendorsWindow();
+                    window = new Vendors.VendorsWindow();
                     break;
             }
 

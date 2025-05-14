@@ -171,154 +171,154 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AddChannelsWindow.xaml.cs">
+    <Compile Include="Channels\AddChannelsWindow.xaml.cs">
       <DependentUpon>AddChannelsWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AddClientWindow.xaml.cs">
+    <Compile Include="Clients\AddClientWindow.xaml.cs">
       <DependentUpon>AddClientWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AddEmployeeWindow.xaml.cs">
+    <Compile Include="Employees\AddEmployeeWindow.xaml.cs">
       <DependentUpon>AddEmployeeWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AddPaymentsWindow.xaml.cs">
+    <Compile Include="Payments\AddPaymentsWindow.xaml.cs">
       <DependentUpon>AddPaymentsWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AddResultWindow.xaml.cs">
+    <Compile Include="CampaignResults\AddResultWindow.xaml.cs">
       <DependentUpon>AddResultWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AddVendorsWindow.xaml.cs">
+    <Compile Include="Vendors\AddVendorsWindow.xaml.cs">
       <DependentUpon>AddVendorsWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CampaignResultsWindow.xaml.cs">
+    <Compile Include="CampaignResults\CampaignResultsWindow.xaml.cs">
       <DependentUpon>CampaignResultsWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ChannelsWindow.xaml.cs">
+    <Compile Include="Channels\ChannelsWindow.xaml.cs">
       <DependentUpon>ChannelsWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ClientsWindow.xaml.cs">
+    <Compile Include="Clients\ClientsWindow.xaml.cs">
       <DependentUpon>ClientsWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EditChannelsWindow.xaml.cs">
+    <Compile Include="Channels\EditChannelsWindow.xaml.cs">
       <DependentUpon>EditChannelsWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EditClientWindow.xaml.cs">
+    <Compile Include="Clients\EditClientWindow.xaml.cs">
       <DependentUpon>EditClientWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EditEmployeeWindow.xaml.cs">
+    <Compile Include="Employees\EditEmployeeWindow.xaml.cs">
       <DependentUpon>EditEmployeeWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EditPaymentsWindow.xaml.cs">
+    <Compile Include="Payments\EditPaymentsWindow.xaml.cs">
       <DependentUpon>EditPaymentsWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EditResultWindow.xaml.cs">
+    <Compile Include="CampaignResults\EditResultWindow.xaml.cs">
       <DependentUpon>EditResultWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EditVendorsWindow.xaml.cs">
+    <Compile Include="Vendors\EditVendorsWindow.xaml.cs">
       <DependentUpon>EditVendorsWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EmployeesWindow.xaml.cs">
+    <Compile Include="Employees\EmployeesWindow.xaml.cs">
       <DependentUpon>EmployeesWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PaymentsWindow.xaml.cs">
+    <Compile Include="Payments\PaymentsWindow.xaml.cs">
       <DependentUpon>PaymentsWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="StartWindow.xaml.cs">
       <DependentUpon>StartWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="VendorsWindow.xaml.cs">
+    <Compile Include="Vendors\VendorsWindow.xaml.cs">
       <DependentUpon>VendorsWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="AddCampaignWindow.xaml">
+    <Page Include="Campaigns\AddCampaignWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AddChannelsWindow.xaml">
+    <Page Include="Channels\AddChannelsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AddClientWindow.xaml">
+    <Page Include="Clients\AddClientWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AddEmployeeWindow.xaml">
+    <Page Include="Employees\AddEmployeeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AddPaymentsWindow.xaml">
+    <Page Include="Payments\AddPaymentsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AddResultWindow.xaml">
+    <Page Include="CampaignResults\AddResultWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AddVendorsWindow.xaml">
+    <Page Include="Vendors\AddVendorsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CampaignResultsWindow.xaml">
+    <Page Include="CampaignResults\CampaignResultsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ChannelsWindow.xaml">
+    <Page Include="Channels\ChannelsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ClientsWindow.xaml">
+    <Page Include="Clients\ClientsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="EditCampaignWindow.xaml">
+    <Page Include="Campaigns\EditCampaignWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="EditChannelsWindow.xaml">
+    <Page Include="Channels\EditChannelsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="EditClientWindow.xaml">
+    <Page Include="Clients\EditClientWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="EditEmployeeWindow.xaml">
+    <Page Include="Employees\EditEmployeeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="EditPaymentsWindow.xaml">
+    <Page Include="Payments\EditPaymentsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="EditResultWindow.xaml">
+    <Page Include="CampaignResults\EditResultWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="EditVendorsWindow.xaml">
+    <Page Include="Vendors\EditVendorsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="EmployeesWindow.xaml">
+    <Page Include="Employees\EmployeesWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="Campaigns\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="AddCampaignWindow.xaml.cs">
+    <Compile Include="Campaigns\AddCampaignWindow.xaml.cs">
       <DependentUpon>AddCampaignWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="EditCampaignWindow.xaml.cs">
+    <Compile Include="Campaigns\EditCampaignWindow.xaml.cs">
       <DependentUpon>EditCampaignWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="Campaigns\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PaymentsWindow.xaml">
+    <Page Include="Payments\PaymentsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -326,7 +326,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="VendorsWindow.xaml">
+    <Page Include="Vendors\VendorsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

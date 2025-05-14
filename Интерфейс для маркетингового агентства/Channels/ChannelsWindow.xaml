@@ -1,0 +1,33 @@
+﻿<Window x:Class="Интерфейс_для_маркетингового_агентства.Channels.ChannelsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Интерфейс_для_маркетингового_агентства"
+        mc:Ignorable="d"
+        Title="ChannelsWindow" Height="400" Width="600">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Таблица каналов (Channels)" FontSize="20" FontWeight="Bold" Margin="0,0,0,10" HorizontalAlignment="Center"/>
+
+        <DataGrid x:Name="ChannelsDataGrid" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Channel id" Binding="{Binding channel_id}" Width="*"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding name}" Width="*"/>
+                <DataGridTextColumn Header="Type" Binding="{Binding type}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 10 0 0">
+            <Button x:Name="AddChannelButton" Content="Добавить" Width="100" Margin="0 0 10 0" Click="AddChannelButton_Click" FontSize="15"/>
+            <Button x:Name="EditChannelButton" Content="Редактировать" Width="120" Margin="0 0 10 0" Click="EditChannelButton_Click" FontSize="15"/>
+            <Button x:Name="DeleteChannelButton" Content="Удалить" Width="100" Click="DeleteChannelButton_Click" FontSize="15"/>
+            <Button x:Name="BackButton" Content="Назад" Width="80" Margin="10 0 10 0" Click="BackButton_Click" FontSize="15"/>
+        </StackPanel>
+    </Grid>
+</Window>
